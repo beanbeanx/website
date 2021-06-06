@@ -5,11 +5,11 @@
   export { light, narrow };
 </script>
 
-<div class:narrow class:light class="items-center justify-center flex mb-6">
+<div class:narrow class:light class="items-center justify-center flex">
   <img src="logo.svg" alt="BeanBean Exchange Logo" />
   <a
-    class="font-logo font-bold no-underline hover:no-underline text-2xl lg:text-4xl"
-    href="#"
+    class="font-logo font-bold no-underline hover:no-underline text-2xl lg:text-3xl"
+    href="/"
   >
     BeanBean Exchange
   </a>
