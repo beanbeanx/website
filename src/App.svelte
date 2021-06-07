@@ -56,7 +56,7 @@
       <div class="flex flex-wrap">
         <div class="w-5/6 sm:w-1/2 p-6">
           <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
-            Verify farm & coffee in seconds
+            Verify farm &amp; coffee in seconds
           </h3>
           <p class="text-gray-600 mb-8">
             Backed by the <a href="https://jacra.org/" target="_blank"
@@ -84,7 +84,7 @@
             </h3>
             <p class="text-gray-600 mb-8">
               Get smooth-tasting Blue Mountain coffee delivered directly from farms,
-              cutting out distributors to receive peak freshness &amp; and authenticity.
+              cutting out distributors to receive peak freshness, and authenticity.
             </p>
           </div>
         </div>
@@ -93,7 +93,7 @@
       <div class="flex flex-wrap">
         <div class="w-5/6 sm:w-1/2 p-6">
           <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
-            Governance & get benefit
+            Governance & Rewards
           </h3>
           <p class="text-gray-600 mb-8">
             Receive NFTs, airdrops, purchase protection, profit sharing, and governance
@@ -149,7 +149,8 @@
             ></svg
           >
           The farm roasts, certifies, and mails the coffee directly to your door. Each bag
-          contains an unforgeable seal that references the on-chain transaction.
+          bears a unique, tamper-proof seal that references the on-chain transaction and establishes
+          the farm as its origin.
         </HowItWorksItem>
         <HowItWorksItem title="Receive">
           <svg
