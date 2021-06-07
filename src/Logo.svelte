@@ -8,7 +8,7 @@
 <div class:narrow class:light class="items-center justify-center flex">
   <img src="logo.svg" alt="BeanBean Exchange Logo" />
   <a
-    class="font-logo font-bold no-underline hover:no-underline text-2xl lg:text-3xl"
+    class="font-logo font-bold text-brand no-underline hover:no-underline text-2xl lg:text-3xl"
     href="/"
   >
     BeanBean Exchange

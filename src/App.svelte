@@ -59,9 +59,10 @@
             Verify farm & coffee in seconds
           </h3>
           <p class="text-gray-600 mb-8">
-            Backed with Jamaica Agricultural Commodities Regulatory Authority and public
-            cryptography tools, BeanBean allows you to verify the selling farm and trace
-            the received coffee in seconds.
+            Backed by the <a href="https://jacra.org/" target="_blank"
+              >Jamaica Agricultural Commodities Regulatory Authority</a
+            > and cryptographic signatures, BeanBean allows you to verify the farm and trace
+            the origin of the received coffee in seconds.
           </p>
         </div>
         <div class="w-full sm:w-1/2 p-6">
@@ -79,11 +80,11 @@
         <div class="w-full sm:w-1/2 p-6 mt-6">
           <div class="align-middle">
             <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
-              Enjoy best product, not best middleman
+              Enjoy the best product, not the resellers
             </h3>
             <p class="text-gray-600 mb-8">
-              Get smooth, bitterless tasting Blue Mountain coffee directly from farms,
-              cutting out middlemen to receive peak freshness &amp; and authentic quality.
+              Get smooth-tasting Blue Mountain coffee delivered directly from farms,
+              cutting out distributors to receive peak freshness &amp; and authenticity.
             </p>
           </div>
         </div>
@@ -95,8 +96,8 @@
             Governance & get benefit
           </h3>
           <p class="text-gray-600 mb-8">
-            Receive badges, full-refund, disbursement of excess operation fees and
-            governance benefits for holding coffee tokens.
+            Receive NFTs, airdrops, purchase protection, profit sharing, and governance
+            rights by holding coffee tokens earned from using the marketplace.
           </p>
         </div>
 
