@@ -4,14 +4,11 @@
 
 <footer class="bg-white">
   <div class="container mx-auto px-8">
-    <div class="w-full flex flex-col md:flex-row py-6">
+    <div class="w-full flex py-6 justify-between">
       <Logo />
 
-      <div
-        class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20"
-        id="nav-content"
-      >
-        <ul class="list-reset lg:flex justify-end flex-1 items-center">
+      <div class="flex-row  w-auto mt-0 bg-white text-black p-4">
+        <ul class="list-reset flex">
           <li class="mr-3">
             <a
               class="inline-block text-gray-500 no-underline py-2 px-4"
