@@ -46,7 +46,13 @@
           <li class="mr-3">
             <a
               class="inline-block text-gray-800 no-underline py-1 px-4"
-              href="mailto:contact@beanbean.exchange">Contact</a
+              href="https://twitter.com/beanbeanxchg">Twitter</a
+            >
+          </li>
+          <li class="mr-3">
+            <a
+              class="inline-block text-gray-800 no-underline py-1 px-4"
+              href="mailto:contact@beanbean.exchange">Contact Us</a
             >
           </li>
           <a
