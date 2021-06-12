@@ -1,0 +1,13 @@
+<style global>
+  @import "tailwindcss/base";
+
+  @import "tailwindcss/components";
+
+  @import "tailwindcss/utilities";
+
+  @layer base {
+    a {
+      @apply text-blue-800 underline;
+    }
+  }
+</style>

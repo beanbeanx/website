@@ -1,10 +1,10 @@
 <script lang="ts">
-  import Footer from './Footer.svelte';
-  import HowItWorksItem from './HowItWorksItem.svelte';
-  import Nav from './Nav.svelte';
-  import Tailwind from './Tailwind.svelte';
-  import Wave from './Wave.svelte';
-  import { scrollTo } from './utils.ts';
+  import Footer from "./Footer.svelte";
+  import HowItWorksItem from "./HowItWorksItem.svelte";
+  import Nav from "./Nav.svelte";
+  import Tailwind from "./Tailwind.svelte";
+  import Wave from "./Wave.svelte";
+  import { scrollTo } from "./utils.ts";
 </script>
 
 <div class="leading-normal tracking-normal text-white gradient">
@@ -23,8 +23,8 @@
           The world’s best coffee, <br /> verified by blockchain
         </h1>
         <p class="leading-normal text-2xl mb-8">
-          Buy premium Jamaican Blue Mountain coffee directly from farms and verify your
-          order using blockchain!
+          Buy premium Jamaican Blue Mountain coffee directly from farms and
+          verify your order using blockchain!
         </p>
         <a
           class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
@@ -46,7 +46,9 @@
   </div>
   <section class="bg-white border-b py-8">
     <div class="container max-w-5xl mx-auto m-8">
-      <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
+      <h1
+        class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800"
+      >
         Learn More
       </h1>
       <div class="w-full mb-4">
@@ -61,8 +63,8 @@
           <p class="text-gray-600 mb-8">
             Backed by the <a href="https://jacra.org/" target="_blank"
               >Jamaica Agricultural Commodities Regulatory Authority</a
-            > and cryptographic signatures, BeanBean allows you to verify the farm and trace
-            the origin of the received coffee in seconds.
+            > and cryptographic signatures, BeanBean allows you to verify the farm
+            and trace the origin of the received coffee in seconds.
           </p>
         </div>
         <div class="w-full sm:w-1/2 p-6">
@@ -75,7 +77,10 @@
 
       <div class="flex flex-wrap flex-col-reverse sm:flex-row">
         <div class="w-full sm:w-1/2 p-6 mt-6">
-          <img src="ships_to.svg" alt="world map showing where BeanBean Exchange ships" />
+          <img
+            src="ships_to.svg"
+            alt="world map showing where BeanBean Exchange ships"
+          />
         </div>
         <div class="w-full sm:w-1/2 p-6 mt-6">
           <div class="align-middle">
@@ -83,8 +88,9 @@
               Enjoy the best product, not the resellers
             </h3>
             <p class="text-gray-600 mb-8">
-              Get smooth-tasting Blue Mountain coffee delivered directly from farms,
-              cutting out distributors to receive peak freshness, and authenticity.
+              Get smooth-tasting Blue Mountain coffee delivered directly from
+              farms, cutting out distributors to receive peak freshness, and
+              authenticity.
             </p>
           </div>
         </div>
@@ -96,13 +102,17 @@
             Governance & Rewards
           </h3>
           <p class="text-gray-600 mb-8">
-            Receive NFTs, airdrops, purchase protection, profit sharing, and governance
-            rights by holding coffee tokens earned from using the marketplace.
+            Receive NFTs, airdrops, purchase protection, profit sharing, and
+            governance rights by holding coffee tokens earned from using the
+            marketplace.
           </p>
         </div>
 
         <div class="w-full sm:w-1/2 p-6">
-          <img src="benefits.svg" alt="world map showing where BeanBean Exchange ships" />
+          <img
+            src="benefits.svg"
+            alt="world map showing where BeanBean Exchange ships"
+          />
         </div>
       </div>
     </div>
@@ -110,7 +120,9 @@
 
   <section class="bg-gray-100 border-w py-8">
     <div class="container mx-auto flex flex-wrap pt-4 pb-12">
-      <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
+      <h1
+        class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800"
+      >
         How it works
       </h1>
       <div class="w-full mb-4">
@@ -130,8 +142,8 @@
               d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"
             /></svg
           >
-          Browse verifiable farms, choose your favorite bean grade and roast, &amp; pre-order
-          your share of the crop.
+          Browse verifiable farms, choose your favorite bean grade and roast, &amp;
+          pre-order your share of the crop.
         </HowItWorksItem>
         <HowItWorksItem title="Roast">
           <svg
@@ -148,9 +160,9 @@
               /></g
             ></svg
           >
-          The farm roasts, certifies, and mails the coffee directly to your door. Each bag
-          bears a unique, tamper-proof seal that references the on-chain transaction and establishes
-          the farm as its origin.
+          The farm roasts, certifies, and mails the coffee directly to your door.
+          Each bag bears a unique, tamper-proof seal that references the on-chain
+          transaction and establishes the farm as its origin.
         </HowItWorksItem>
         <HowItWorksItem title="Receive">
           <svg
@@ -164,8 +176,8 @@
               d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"
             /></svg
           >
-          Receive your Blue Montain coffee, verify its authenticity using a unique code, &amp;
-          receive NFTs and other rewards.
+          Receive your Blue Montain coffee, verify its authenticity using a unique
+          code, &amp; receive NFTs and other rewards.
         </HowItWorksItem>
       </ol>
     </div>
@@ -174,7 +186,9 @@
   <!-- Change the colour #f8fafc to match the previous section colour -->
   <Wave position="bottom" />
   <section id="signup" class="container mx-auto text-center py-6 mb-12">
-    <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white">
+    <h1
+      class="w-full my-2 text-5xl font-bold leading-tight text-center text-white"
+    >
       <span class="inline-block">Stay up with latest news &amp;</span>
       <span class="inline-block">Get $5 off at launch</span>
     </h1>
