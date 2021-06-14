@@ -1,3 +1,7 @@
+<svelte:head>
+	<title>BeanBean Exchange - Blue Mountain Coffee, Verified Using Blockchain</title>
+</svelte:head>
+
 <script lang="ts">
   import HowItWorksItem from "$lib/HowItWorksItem.svelte";
   import Wave from "$lib/Wave.svelte";
