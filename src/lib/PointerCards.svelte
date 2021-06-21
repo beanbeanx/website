@@ -92,9 +92,12 @@
 <style lang="scss">
   @use "sass:math";
 
+  @use "src/breakpoints" as bkpt;
+
   $respBkpt: 800px;
   $respGridWidth: 80vw;
   $respNumCols: 7;
+  $cardHeight: 150px;
 
   .pointer-cards {
     counter-reset: pointercard;
@@ -105,13 +108,26 @@
 
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 150px 0 150px 0 150px 0 150px 0 150px;
+    grid-template-rows: $cardHeight 0 $cardHeight 0 $cardHeight 0 $cardHeight 0 $cardHeight;
     grid-row-gap: 20px;
     align-items: center;
     justify-items: center;
 
-    @media (max-width: $respBkpt) {
+    @media (min-width: bkpt.$mobile) and (max-width: $respBkpt) {
       grid-template-columns: repeat($respNumCols, math.div($respGridWidth, $respNumCols));
+    }
+
+    @media (max-width: bkpt.$mobile) {
+      width: 90vw;
+      justify-items: unset;
+      grid-template-columns: repeat(9, calc(90vw / 9));
+      grid-template-rows: repeat(5, $cardHeight);
+    }
+  }
+
+  .pointer-cards-line {
+    @media (max-width: bkpt.$mobile) {
+      display: none;
     }
   }
 
@@ -121,9 +137,9 @@
     position: relative;
     left: 70px;
     width: 140px;
-    height: 150px;
+    height: $cardHeight;
 
-    @media (max-width: $respBkpt) {
+    @media (min-width: bkpt.$mobile) and (max-width: $respBkpt) {
       left: calc(6vw - 2px);
       width: 12vw;
     }
@@ -134,10 +150,10 @@
     justify-self: start;
     position: relative;
     left: calc(min(50px + 2vw, 70px));
-    height: 150px;
+    height: $cardHeight;
     width: calc(120px + 2vw);
 
-    @media (max-width: $respBkpt) {
+    @media (min-width: bkpt.$mobile) and (max-width: $respBkpt) {
       left: calc(5vw);
       width: 35vw;
     }
@@ -152,7 +168,7 @@
     width: calc(120px + 2vw);
     transform: scaleY(-1);
 
-    @media (max-width: $respBkpt) {
+    @media (min-width: bkpt.$mobile) and (max-width: $respBkpt) {
       width: 35vw;
       left: calc(5.5vw);
       top: -5px;
@@ -164,11 +180,11 @@
     justify-self: start;
     position: relative;
     left: 70px;
-    height: 150px;
+    height: $cardHeight;
     transform: scaleY(-1);
     width: calc(110px + 2vw);
 
-    @media (max-width: $respBkpt) {
+    @media (min-width: bkpt.$mobile) and (max-width: $respBkpt) {
       left: calc(6vw - 2px);
       width: 11.5vw;
     }
