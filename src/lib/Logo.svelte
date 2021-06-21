@@ -1,23 +1,32 @@
 <script>
-  let light = false;
-  let narrow = false;
-
-  export { light, narrow };
+  export let light  = false;
+  export let narrow = false;
 </script>
 
-<div class:narrow class:light class="items-center justify-center flex">
-  <img src="logo.svg" alt="BeanBean Exchange Logo" />
-  <a
-    class="font-logo font-bold text-brand no-underline hover:no-underline text-2xl lg:text-3xl"
-    href="/"
-  >
-    BeanBean Exchange
-  </a>
+<div class:narrow class:light class="logo-wrap">
+  <img src="logo.svg" alt="BeanBean Exchange" />
+  <a href="/">BeanBean Exchange</a>
 </div>
 
-<style>
-  div {
+<style lang="scss">
+  @use "src/breakpoints" as bkpt;
+
+  .logo-wrap {
+    display: flex;
+    align-items: center;
+  }
+
+  a {
     color: #ee5b5b;
+    font-family: kirvy, sans-serif;
+    font-weight: bold;
+    justify-items: center;
+    text-decoration: none;
+    font-size: 2em;
+
+    @media (max-width: bkpt.$mobile) {
+      font-size: 1.5em;
+    }
   }
   img {
     display: inline;
@@ -34,8 +43,5 @@
   }
   .light img {
     filter: saturate(0%) brightness(1000%);
-  }
-  .font-logo {
-    font-family: kirvy, sans-serif;
   }
 </style>

@@ -1,75 +1,87 @@
 <script lang="ts">
+  import { faBars } from '@fortawesome/free-solid-svg-icons';
+  import Icon from 'svelte-awesome/components/Icon.svelte';
+
   import Logo from './Logo.svelte';
   import { scrollTo } from '../utils.ts';
-
-  let menuVisible = false;
-
-  export function toggleMenu() {
-    menuVisible = !menuVisible;
-  }
 </script>
 
-<nav>
-  <nav id="header" class="w-full bg-white z-30 top-0 text-white">
-    <div
-      class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2"
-    >
-      <Logo />
+<header>
+  <Logo />
 
-      <div class="block md:hidden pr-4">
-        <button
-          class="flex menu-button items-center p-1 hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
-          on:click={() => toggleMenu()}
-        >
-          <svg
-            class="fill-current h-6 w-6"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <title>Menu</title>
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-          </svg>
-        </button>
-      </div>
+  <button class="menu-button">
+    <label for="menuToggle">
+      <Icon data={faBars} scale="1.3" />
+    </label>
+  </button>
+  <input type="checkbox" id="menuToggle" />
 
-      <div
-        class:hidden={!menuVisible}
-        class="w-full flex-grow md:flex md:items-center md:w-auto mt-0 md:mt-0 bg-white md:bg-transparent text-black p-4 md:p-0 z-20"
-      >
-        <ul class="list-reset md:flex justify-end flex-1 items-center">
-          <li class="mr-3">
-            <a
-              class="inline-block text-gray-800 no-underline py-1 px-4"
-              href="https://beanbean.substack.com">Blog</a
-            >
-          </li>
-          <li class="mr-3">
-            <a
-              class="inline-block text-gray-800 no-underline py-1 px-4"
-              href="https://twitter.com/beanbeanxchg">Twitter</a
-            >
-          </li>
-          <li class="mr-3">
-            <a
-              class="inline-block text-gray-800 no-underline py-1 px-4"
-              href="mailto:contact@beanbean.exchange">Contact Us</a
-            >
-          </li>
-          <a
-            class="mx-auto md:mx-0 hover:underline bg-'ee5b5b' text-gray-800 font-bold py-1 px-4 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
-            on:click={scrollTo}
-            href="#signup"
-          >
-            Join the Mailing List
-          </a>
-        </ul>
-      </div>
-    </div>
+  <nav>
+    <ul>
+      <li><a href="https://beanbean.substack.com" target="_blank">Blog</a></li>
+      <li>Farms</li>
+      <li><a href="#subscribe" on:click={scrollTo}>Subscribe</a></li>
+    </ul>
   </nav>
-</nav>
+</header>
 
-<style>
+<style lang="scss">
+  @use "src/breakpoints" as bkpt;
+
+  header {
+    background-color: white;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+
+  input[type='checkbox'] {
+    display: none;
+
+    &:checked ~ nav {
+      display: block;
+    }
+  }
+
+  nav {
+    margin: auto;
+
+    @media (max-width: bkpt.$mobile) {
+      display: none;
+    }
+  }
+
+  ul {
+    padding: 0;
+    margin: auto;
+  }
+
+  li {
+    display: inline-flex;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+
   .menu-button {
     color: var(--brand-color);
+    background-color: transparent;
+    border: unset;
+    cursor: pointer;
+    display: none;
+
+    &:active {
+      color: darken(#ee5b5b, 20%);
+    }
+
+    @media (max-width: bkpt.$mobile) {
+      display: block;
+    }
+  }
+
+  input[type='checkbox'] {
+    display: none;
   }
 </style>

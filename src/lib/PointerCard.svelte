@@ -9,11 +9,9 @@
   let colStart, colEnd, cardColStart, cardColEnd, ballCol;
   $: {
     [colStart, colEnd] = colspan.split(':').map(s => parseInt(s, 10));
-    // console.log(colStart, colEnd);
     ballCol = direction === 'right' ? colEnd - 1 : colStart;
     cardColStart = direction === 'right' ? colStart : colStart + 1;
     cardColEnd = direction === 'right' ? colEnd - 1 : colEnd;
-    console.log(cardColStart, cardColEnd, ballCol)
   }
 </script>
 
