@@ -1,6 +1,6 @@
 <script lang="ts">
-  import Logo from "./Logo.svelte";
-  import { scrollTo } from "../utils.ts";
+  import Logo from './Logo.svelte';
+  import { scrollTo } from '../utils.ts';
 
   let menuVisible = false;
 

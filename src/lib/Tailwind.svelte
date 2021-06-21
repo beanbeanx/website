@@ -1,9 +1,9 @@
 <style global>
-  @import "tailwindcss/base";
+  @import 'tailwindcss/base';
 
-  @import "tailwindcss/components";
+  @import 'tailwindcss/components';
 
-  @import "tailwindcss/utilities";
+  @import 'tailwindcss/utilities';
 
   @layer base {
     a {
